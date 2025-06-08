@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  CodeExample
+  
+*/
+"login_failed" = "Login failed";
+"login_failed_msg" = "Wrong username or password.";
+"ok" = "OK";
