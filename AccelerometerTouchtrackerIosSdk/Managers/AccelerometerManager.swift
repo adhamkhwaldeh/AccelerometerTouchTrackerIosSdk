@@ -8,8 +8,9 @@
 // Updated AccelerometerManager
 import CoreMotion
 
-@objc public class AccelerometerManager : NSObject{
-    private let motionManager = CMMotionManager()
+@objcMembers
+public class AccelerometerManager : NSObject{
+    public var motionManager = CMMotionManager()
     public weak var delegate: AccelerometerManagerDelegate?
 
     public override init() {}

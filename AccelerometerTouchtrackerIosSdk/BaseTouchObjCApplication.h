@@ -11,4 +11,9 @@
 
 @property (nonatomic, copy) void (^onTouchesEvent)(NSSet<UITouch *> *touches, UIEvent *event);
 
+@property (nonatomic, assign, getter=isListeningEnabled) BOOL listeningEnabled;
+
+- (void)startListening;
+- (void)stopListening;
+
 @end

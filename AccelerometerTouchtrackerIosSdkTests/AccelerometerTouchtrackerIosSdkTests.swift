@@ -5,13 +5,30 @@
 //  Created by adham khwaldeh on 9/6/25.
 //
 
-import Testing
+import XCTest
+import CoreMotion
 @testable import AccelerometerTouchtrackerIosSdk
 
-struct AccelerometerTouchtrackerIosSdkTests {
+class AccelerometerManagerTests: XCTestCase {
 
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    func testStartListening_WhenAccelerometerUnavailable_CallsDelegateWithError() {
+        class MockDelegate: AccelerometerManagerDelegate {
+            var didFailWithErrorCalled = false
+            func accelerometerManager(with manager: AccelerometerManager, didReceiveData data: CMAccelerometerData) {}
+            func accelerometerManager(with manager: AccelerometerManager, didFailWithError error: AccelerometerListenerError) {
+                didFailWithErrorCalled = true
+            }
+        }
+
+        let manager = AccelerometerManager()
+        let delegate = MockDelegate()
+        manager.delegate = delegate
+
+        // Simulate unavailable accelerometer
+        manager.motionManager = CMMotionManager()
+//        manager.motionManager.isAccelerometerAvailable = false
+
+        manager.startListening(updateInterval: 0.1)
+        XCTAssertTrue(delegate.didFailWithErrorCalled)
     }
-
 }
