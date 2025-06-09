@@ -5,7 +5,7 @@
 
 #import "MainViewController.h"
 #import "SampleApp.h"
-@import AccelerometerTouchTrackerSdk;
+@import AccelerometerTouchtrackerIosSdk;
 
 @interface MainViewController ()
 

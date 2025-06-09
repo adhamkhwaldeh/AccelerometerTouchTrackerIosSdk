@@ -4,12 +4,9 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "CodeExample-Swift.h"
-//#import <AccelerometerTouchTrackerSdk/AccelerometerTouchTrackerSdk-Swift.h>
-// Replace with your actual module name
-@import AccelerometerTouchTrackerSdk;
+#import <AccelerometerTouchTrackerIosSdk/BaseTouchTrackingObjectCViewController.h>
 
-//@interface MainViewController : BaseTouchTrackingViewController
-@interface MainViewController : UIViewController
+@interface MainViewController  : BaseTouchTrackingObjectCViewController
+//@interface MainViewController : UIViewController
 
 @end

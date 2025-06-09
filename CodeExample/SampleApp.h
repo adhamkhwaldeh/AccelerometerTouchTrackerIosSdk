@@ -4,9 +4,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface SampleApp : NSObject
-
+#import <AccelerometerTouchtrackerIosSdk/AccelerometerTouchtrackerIosSdk-Swift.h>
+#import <AccelerometerTouchtrackerIosSdk/BaseTouchObjCApplication.h>
+//#import <AccelerometerTouchtrackerIosSdk/BaseTouchObjCApplication.h>
+//@interface SampleApp : BaseTouchApplication
+//
+//+ (id)sharedSampleApp;
+//
+//@end
+@interface SampleApp :NSObject//UIApplication //BaseTouchObjCApplication//NSObject //
 + (id)sharedSampleApp;
-
 @end
+

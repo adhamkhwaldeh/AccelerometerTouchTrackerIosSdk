@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C64E2AC62DF628F2002B2A44 /* AccelerometerTouchTrackerSdk in Frameworks */ = {isa = PBXBuildFile; productRef = C64E2AC52DF628F2002B2A44 /* AccelerometerTouchTrackerSdk */; };
-		C64E2AC92DF6302B002B2A44 /* TouchTrackingApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E2AC82DF63026002B2A44 /* TouchTrackingApplication.swift */; };
+		C666BE8E2DF72BDD003CB78B /* BaseTouchTrackingApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C666BE7F2DF72BDD003CB78B /* BaseTouchTrackingApplication.swift */; };
+		C666BEAC2DF7656B003CB78B /* TouchApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C666BEAB2DF76561003CB78B /* TouchApplication.swift */; };
+		C69D1AC82DF65F46005E513C /* AccelerometerTouchtrackerIosSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69D1ABE2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk.framework */; };
+		C69D1AD32DF65F46005E513C /* AccelerometerTouchtrackerIosSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69D1ABE2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk.framework */; };
+		C69D1AD42DF65F46005E513C /* AccelerometerTouchtrackerIosSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C69D1ABE2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA521F5D25B0731700BB8DA7 /* SampleApp.m in Sources */ = {isa = PBXBuildFile; fileRef = DA521F5C25B0731700BB8DA7 /* SampleApp.m */; };
 		DA96ECAE25AEFC16007AADB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA96ECAD25AEFC16007AADB8 /* AppDelegate.m */; };
 		DA96ECB425AEFC16007AADB8 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA96ECB325AEFC16007AADB8 /* StartViewController.m */; };
@@ -21,6 +24,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C69D1AC92DF65F46005E513C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA96ECA125AEFC16007AADB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C69D1ABD2DF65F45005E513C;
+			remoteInfo = AccelerometerTouchtrackerIosSdk;
+		};
+		C69D1ACB2DF65F46005E513C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA96ECA125AEFC16007AADB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA96ECA825AEFC16007AADB8;
+			remoteInfo = CodeExample;
+		};
+		C69D1AD12DF65F46005E513C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA96ECA125AEFC16007AADB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C69D1ABD2DF65F45005E513C;
+			remoteInfo = AccelerometerTouchtrackerIosSdk;
+		};
 		C6C433202DF4863900E2145B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C6C433182DF4861100E2145B /* Relx.xcodeproj */;
@@ -44,10 +68,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C69D1AD52DF65F46005E513C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C69D1AD42DF65F46005E513C /* AccelerometerTouchtrackerIosSdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		C64E2AC82DF63026002B2A44 /* TouchTrackingApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTrackingApplication.swift; sourceTree = "<group>"; };
-		C64E2ACA2DF63033002B2A44 /* CodeExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeExample-Bridging-Header.h"; sourceTree = "<group>"; };
-		C64E2AD02DF63EE8002B2A44 /* AccelerometerTouchTrackerSdk */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AccelerometerTouchTrackerSdk; sourceTree = "<group>"; };
+		C666BE7A2DF72B73003CB78B /* CodeExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		C666BE7F2DF72BDD003CB78B /* BaseTouchTrackingApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTouchTrackingApplication.swift; sourceTree = "<group>"; };
+		C666BEAB2DF76561003CB78B /* TouchApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchApplication.swift; sourceTree = "<group>"; };
+		C69D1ABE2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AccelerometerTouchtrackerIosSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C69D1AC72DF65F46005E513C /* AccelerometerTouchtrackerIosSdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccelerometerTouchtrackerIosSdkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C433182DF4861100E2145B /* Relx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Relx.xcodeproj; path = /Users/adhamkhwaldeh/Data/Assignment/Relx/AccelerometerTouchTrackerSdkIos/Relx/Relx.xcodeproj; sourceTree = "<absolute>"; };
 		DA521F5B25B0730B00BB8DA7 /* SampleApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleApp.h; sourceTree = "<group>"; };
 		DA521F5C25B0731700BB8DA7 /* SampleApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleApp.m; sourceTree = "<group>"; };
@@ -67,12 +107,56 @@
 		DA96ECD825AF3DAC007AADB8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C666BE9F2DF740E2003CB78B /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Managers/TouchWindow.swift,
+				Protocols/TouchWindowDelegate.swift,
+			);
+			target = DA96ECA825AEFC16007AADB8 /* CodeExample */;
+		};
+		C69D1ADA2DF65F46005E513C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Managers/TouchWindow.swift,
+				Protocols/TouchWindowDelegate.swift,
+			);
+			publicHeaders = (
+				AccelerometerTouchtrackerIosSdk.h,
+				BaseTouchObjCApplication.h,
+				BaseTouchTrackingObjectCViewController.h,
+			);
+			target = C69D1ABD2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C69D1ABF2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (C666BE9F2DF740E2003CB78B /* PBXFileSystemSynchronizedBuildFileExceptionSet */, C69D1ADA2DF65F46005E513C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = AccelerometerTouchtrackerIosSdk; sourceTree = "<group>"; usesTabs = 0; };
+		C69D1ACD2DF65F46005E513C /* AccelerometerTouchtrackerIosSdkTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = AccelerometerTouchtrackerIosSdkTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		C69D1ABB2DF65F45005E513C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C69D1AC42DF65F46005E513C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C69D1AC82DF65F46005E513C /* AccelerometerTouchtrackerIosSdk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA96ECA625AEFC16007AADB8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C64E2AC62DF628F2002B2A44 /* AccelerometerTouchTrackerSdk in Frameworks */,
+				C69D1AD32DF65F46005E513C /* AccelerometerTouchtrackerIosSdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +178,8 @@
 			children = (
 				C6C433182DF4861100E2145B /* Relx.xcodeproj */,
 				DA96ECAB25AEFC16007AADB8 /* CodeExample */,
+				C69D1ABF2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk */,
+				C69D1ACD2DF65F46005E513C /* AccelerometerTouchtrackerIosSdkTests */,
 				DA96ECAA25AEFC16007AADB8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				DA96ECA925AEFC16007AADB8 /* CodeExample.app */,
+				C69D1ABE2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk.framework */,
+				C69D1AC72DF65F46005E513C /* AccelerometerTouchtrackerIosSdkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,8 +197,7 @@
 		DA96ECAB25AEFC16007AADB8 /* CodeExample */ = {
 			isa = PBXGroup;
 			children = (
-				C64E2AD02DF63EE8002B2A44 /* AccelerometerTouchTrackerSdk */,
-				C64E2AC82DF63026002B2A44 /* TouchTrackingApplication.swift */,
+				C666BEAB2DF76561003CB78B /* TouchApplication.swift */,
 				DA96ECAC25AEFC16007AADB8 /* AppDelegate.h */,
 				DA96ECAD25AEFC16007AADB8 /* AppDelegate.m */,
 				DA96ECB825AEFC18007AADB8 /* Assets.xcassets */,
@@ -120,20 +207,78 @@
 				DA96ECCC25AF0380007AADB8 /* LoginViewController.m */,
 				DA96ECBE25AEFC18007AADB8 /* main.m */,
 				DA96ECB525AEFC16007AADB8 /* Main.storyboard */,
+				C666BE7F2DF72BDD003CB78B /* BaseTouchTrackingApplication.swift */,
 				DA96ECD125AF17E5007AADB8 /* MainViewController.h */,
 				DA96ECD425AF1867007AADB8 /* MainViewController.m */,
 				DA521F5B25B0730B00BB8DA7 /* SampleApp.h */,
+				C666BE7A2DF72B73003CB78B /* CodeExample-Bridging-Header.h */,
 				DA521F5C25B0731700BB8DA7 /* SampleApp.m */,
 				DA96ECB225AEFC16007AADB8 /* StartViewController.h */,
 				DA96ECB325AEFC16007AADB8 /* StartViewController.m */,
-				C64E2ACA2DF63033002B2A44 /* CodeExample-Bridging-Header.h */,
 			);
 			path = CodeExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		C69D1AB92DF65F45005E513C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		C69D1ABD2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C69D1ADB2DF65F46005E513C /* Build configuration list for PBXNativeTarget "AccelerometerTouchtrackerIosSdk" */;
+			buildPhases = (
+				C69D1AB92DF65F45005E513C /* Headers */,
+				C69D1ABA2DF65F45005E513C /* Sources */,
+				C69D1ABB2DF65F45005E513C /* Frameworks */,
+				C69D1ABC2DF65F45005E513C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C69D1ABF2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk */,
+			);
+			name = AccelerometerTouchtrackerIosSdk;
+			packageProductDependencies = (
+			);
+			productName = AccelerometerTouchtrackerIosSdk;
+			productReference = C69D1ABE2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C69D1AC62DF65F46005E513C /* AccelerometerTouchtrackerIosSdkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C69D1ADC2DF65F46005E513C /* Build configuration list for PBXNativeTarget "AccelerometerTouchtrackerIosSdkTests" */;
+			buildPhases = (
+				C69D1AC32DF65F46005E513C /* Sources */,
+				C69D1AC42DF65F46005E513C /* Frameworks */,
+				C69D1AC52DF65F46005E513C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C69D1ACA2DF65F46005E513C /* PBXTargetDependency */,
+				C69D1ACC2DF65F46005E513C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C69D1ACD2DF65F46005E513C /* AccelerometerTouchtrackerIosSdkTests */,
+			);
+			name = AccelerometerTouchtrackerIosSdkTests;
+			packageProductDependencies = (
+			);
+			productName = AccelerometerTouchtrackerIosSdkTests;
+			productReference = C69D1AC72DF65F46005E513C /* AccelerometerTouchtrackerIosSdkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DA96ECA825AEFC16007AADB8 /* CodeExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA96ECC225AEFC18007AADB8 /* Build configuration list for PBXNativeTarget "CodeExample" */;
@@ -141,10 +286,12 @@
 				DA96ECA525AEFC16007AADB8 /* Sources */,
 				DA96ECA625AEFC16007AADB8 /* Frameworks */,
 				DA96ECA725AEFC16007AADB8 /* Resources */,
+				C69D1AD52DF65F46005E513C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C69D1AD22DF65F46005E513C /* PBXTargetDependency */,
 			);
 			name = CodeExample;
 			productName = CodeExample;
@@ -157,8 +304,17 @@
 		DA96ECA125AEFC16007AADB8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1230;
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					C69D1ABD2DF65F45005E513C = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					C69D1AC62DF65F46005E513C = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = DA96ECA825AEFC16007AADB8;
+					};
 					DA96ECA825AEFC16007AADB8 = {
 						CreatedOnToolsVersion = 12.3;
 						LastSwiftMigration = 1610;
@@ -175,7 +331,6 @@
 			);
 			mainGroup = DA96ECA025AEFC16007AADB8;
 			packageReferences = (
-				C64E2ACE2DF63E34002B2A44 /* XCLocalSwiftPackageReference "../AccelerometerTouchTrackerSdk" */,
 			);
 			productRefGroup = DA96ECAA25AEFC16007AADB8 /* Products */;
 			projectDirPath = "";
@@ -188,6 +343,8 @@
 			projectRoot = "";
 			targets = (
 				DA96ECA825AEFC16007AADB8 /* CodeExample */,
+				C69D1ABD2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk */,
+				C69D1AC62DF65F46005E513C /* AccelerometerTouchtrackerIosSdkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +374,20 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C69D1ABC2DF65F45005E513C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C69D1AC52DF65F46005E513C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA96ECA725AEFC16007AADB8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,21 +401,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C69D1ABA2DF65F45005E513C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C666BE8E2DF72BDD003CB78B /* BaseTouchTrackingApplication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C69D1AC32DF65F46005E513C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA96ECA525AEFC16007AADB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C666BEAC2DF7656B003CB78B /* TouchApplication.swift in Sources */,
 				DA96ECB425AEFC16007AADB8 /* StartViewController.m in Sources */,
 				DA96ECAE25AEFC16007AADB8 /* AppDelegate.m in Sources */,
 				DA96ECBF25AEFC18007AADB8 /* main.m in Sources */,
 				DA96ECD525AF1867007AADB8 /* MainViewController.m in Sources */,
-				C64E2AC92DF6302B002B2A44 /* TouchTrackingApplication.swift in Sources */,
 				DA96ECCD25AF0380007AADB8 /* LoginViewController.m in Sources */,
 				DA521F5D25B0731700BB8DA7 /* SampleApp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C69D1ACA2DF65F46005E513C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C69D1ABD2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk */;
+			targetProxy = C69D1AC92DF65F46005E513C /* PBXContainerItemProxy */;
+		};
+		C69D1ACC2DF65F46005E513C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA96ECA825AEFC16007AADB8 /* CodeExample */;
+			targetProxy = C69D1ACB2DF65F46005E513C /* PBXContainerItemProxy */;
+		};
+		C69D1AD22DF65F46005E513C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C69D1ABD2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk */;
+			targetProxy = C69D1AD12DF65F46005E513C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA96ECB525AEFC16007AADB8 /* Main.storyboard */ = {
@@ -258,6 +462,144 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C69D1AD62DF65F46005E513C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_HEADERS_RUN_UNIFDEF = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.behaviosec.ios.AccelerometerTouchtrackerIosSdk.AccelerometerTouchtrackerIosSdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C69D1AD72DF65F46005E513C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_HEADERS_RUN_UNIFDEF = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.behaviosec.ios.AccelerometerTouchtrackerIosSdk.AccelerometerTouchtrackerIosSdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C69D1AD82DF65F46005E513C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QS4W55MSV7;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.behaviosec.ios.AccelerometerTouchtrackerIosSdk.AccelerometerTouchtrackerIosSdkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodeExample";
+			};
+			name = Debug;
+		};
+		C69D1AD92DF65F46005E513C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QS4W55MSV7;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.behaviosec.ios.AccelerometerTouchtrackerIosSdk.AccelerometerTouchtrackerIosSdkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodeExample";
+			};
+			name = Release;
+		};
 		DA96ECC025AEFC18007AADB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -366,6 +708,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -426,6 +769,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C69D1ADB2DF65F46005E513C /* Build configuration list for PBXNativeTarget "AccelerometerTouchtrackerIosSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C69D1AD62DF65F46005E513C /* Debug */,
+				C69D1AD72DF65F46005E513C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C69D1ADC2DF65F46005E513C /* Build configuration list for PBXNativeTarget "AccelerometerTouchtrackerIosSdkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C69D1AD82DF65F46005E513C /* Debug */,
+				C69D1AD92DF65F46005E513C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DA96ECA425AEFC16007AADB8 /* Build configuration list for PBXProject "CodeExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -445,20 +806,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		C64E2ACE2DF63E34002B2A44 /* XCLocalSwiftPackageReference "../AccelerometerTouchTrackerSdk" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../AccelerometerTouchTrackerSdk;
-		};
-/* End XCLocalSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C64E2AC52DF628F2002B2A44 /* AccelerometerTouchTrackerSdk */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = AccelerometerTouchTrackerSdk;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA96ECA125AEFC16007AADB8 /* Project object */;
 }
