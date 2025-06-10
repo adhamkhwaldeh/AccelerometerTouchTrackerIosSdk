@@ -63,8 +63,8 @@ SampleApp* sampleApp;
     [self checkCredentialsWithUsername:username andPassword:password];
 
     // Clean fields
-    [_tfUsername setText:@"behaviouser"];
-    [_tfPassword setText:@"password"];
+    [_tfUsername setText:@""];
+    [_tfPassword setText:@""];
 }
 
 - (void) checkCredentialsWithUsername:(NSString*)username andPassword:(NSString*)password
