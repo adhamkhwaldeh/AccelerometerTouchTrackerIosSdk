@@ -68,9 +68,9 @@ Currently I have Added a local Logger but in real project we can use services li
 
 - **Dashboard View**
 
-| !["](./Docs/Image_2025-06-10_at_18.12.52.jpeg) | !["](./Docs/Image_2025-06-10_at_18.13.19.jpeg) | !["](./Docs/Image_2025-06-10_at_18.13.39.jpeg) |
-    !["](./Docs/Simulator_Screenshot_iPhone_16_Pro_2025-06-10_23.22.21.png) |
-|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| Screenshot 1 | Screenshot 2 | Screenshot 3 | Screenshot 4 |
+|--------------|--------------|--------------|--------------|
+| ![](./Docs/Image_2025-06-10_at_18.12.52.jpeg) | ![](./Docs/Image_2025-06-10_at_18.13.19.jpeg) | ![](./Docs/Image_2025-06-10_at_18.13.39.jpeg) | ![](./Docs/Simulator_Screenshot_iPhone_16_Pro_2025-06-10_23.22.21.png) |
 
 ## Authorization
 So far no authentication is required for the SDK. In future releases, we will add an API key service to enhance security.
