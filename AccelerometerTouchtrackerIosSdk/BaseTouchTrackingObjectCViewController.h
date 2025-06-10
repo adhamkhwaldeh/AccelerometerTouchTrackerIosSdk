@@ -13,4 +13,10 @@
 @end
 
 @interface BaseTouchTrackingObjectCViewController : UIViewController <ControllerTouchDelegate>
+
+@property (nonatomic, assign, getter=isListeningEnabled) BOOL listeningEnabled;
+
+- (void)startListening;
+- (void)stopListening;
+
 @end

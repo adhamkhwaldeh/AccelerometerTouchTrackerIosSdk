@@ -9,9 +9,19 @@
 
 @implementation BaseTouchTrackingObjectCViewController
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _listeningEnabled = YES;
+//        isListeningEnabled = YES;
+    }
+    return self;
+}
+
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
-    if (event.allTouches.count > 0) {
+    if (self.isListeningEnabled && event.allTouches.count > 0) {
         [self handleTouchEvent:event];
     }
 }
@@ -21,5 +31,9 @@
     // Optionally, you can use NSAssert or raise an exception to enforce override
     // NSAssert(NO, @"Subclasses must override handleTouchEvent:");
 }
+
+- (void)startListening { self.listeningEnabled = YES; }
+
+- (void)stopListening { self.listeningEnabled = NO; }
 
 @end

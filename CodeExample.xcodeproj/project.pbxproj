@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C64C48E02DF864AA00BDB0F3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C64C48DF2DF864AA00BDB0F3 /* README.md */; };
 		C666BE8E2DF72BDD003CB78B /* BaseTouchTrackingApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C666BE7F2DF72BDD003CB78B /* BaseTouchTrackingApplication.swift */; };
 		C666BEAC2DF7656B003CB78B /* TouchApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C666BEAB2DF76561003CB78B /* TouchApplication.swift */; };
 		C69D1AC82DF65F46005E513C /* AccelerometerTouchtrackerIosSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69D1ABE2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk.framework */; };
@@ -83,6 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C64C48DF2DF864AA00BDB0F3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C666BE7A2DF72B73003CB78B /* CodeExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		C666BE7F2DF72BDD003CB78B /* BaseTouchTrackingApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTouchTrackingApplication.swift; sourceTree = "<group>"; };
 		C666BEAB2DF76561003CB78B /* TouchApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchApplication.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				C69D1ABF2DF65F45005E513C /* AccelerometerTouchtrackerIosSdk */,
 				C69D1ACD2DF65F46005E513C /* AccelerometerTouchtrackerIosSdkTests */,
 				DA96ECAA25AEFC16007AADB8 /* Products */,
+				C64C48DF2DF864AA00BDB0F3 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -394,6 +397,7 @@
 			files = (
 				DA96ECD925AF3DAC007AADB8 /* Localizable.strings in Resources */,
 				DA96ECB925AEFC18007AADB8 /* Assets.xcassets in Resources */,
+				C64C48E02DF864AA00BDB0F3 /* README.md in Resources */,
 				DA96ECB725AEFC16007AADB8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -720,6 +724,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QS4W55MSV7;
 				INFOPLIST_FILE = CodeExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -731,7 +736,7 @@
 					"$(PROJECT_DIR)/CodeExample",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.behaviosec.ios.CodeExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.behaviosec.ios.CodeExample1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeExample/CodeExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
